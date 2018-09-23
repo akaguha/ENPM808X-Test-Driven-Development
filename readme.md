@@ -1,18 +1,17 @@
-# C++ Boilerplate
+# ENPM808X-Test Driven Development
 [![Build Status](https://travis-ci.org/rohit517/ENPM808X-Test-Driven-Development.svg?branch=master)](https://travis-ci.org/rohit517/ENPM808X-Test-Driven-Development)
 [![Coverage Status](https://coveralls.io/repos/github/rohit517/ENPM808X-Test-Driven-Development/badge.svg?branch=master)](https://coveralls.io/github/rohit517/ENPM808X-Test-Driven-Development?branch=master)
 ---
 
 ## Overview
+This repository contains Week 4 of ENPM808X Software Development Course. 
 
-Simple starter C++ project with:
-
-- cmake
-- googletest
+Pair A:
+Part 1 - **Driver**: Rohitkrishna Nambiar and **Navigator**: Akash Guha
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/rohit517/ENPM808X-Test-Driven-Development.git
 cd <path to repository>
 mkdir build
 cd build
@@ -39,7 +38,7 @@ In your Eclipse workspace directory (or create a new one), checkout the repo (an
 ```
 mkdir -p ~/workspace
 cd ~/workspace
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/rohit517/ENPM808X-Test-Driven-Development.git
 ```
 
 In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of cpp-boilerplate
@@ -120,7 +119,3 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
     Project Explorer and choose Source -> Format
 
 [reference-id-for-eclipse-cpp-google-style]: https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-cpp-google-style.xml
-
-- Git
-
-    It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you're interested in this, try it out yourself and contact me on Canvas.
