@@ -13,8 +13,8 @@
  * This class hpp file defines the methods for PID Controller.
  */
 
-#ifndef _HOME_ROHIT_ENPM808X_WEEK_4_CPP_BOILERPLATE_INCLUDE_PIDCONTROLLER_HPP_
-#define _HOME_ROHIT_ENPM808X_WEEK_4_CPP_BOILERPLATE_INCLUDE_PIDCONTROLLER_HPP_
+#ifndef INCLUDE_PIDCONTROLLER_HPP_
+#define INCLUDE_PIDCONTROLLER_HPP_
 
 #include <iostream>
 
@@ -49,4 +49,4 @@ class PidController {
   double computeVelocity(double targetSetpoint, double actualVelocity);
 };
 
-#endif  // _HOME_ROHIT_ENPM808X_WEEK_4_CPP_BOILERPLATE_INCLUDE_PIDCONTROLLER_HPP_
+#endif  // INCLUDE_PIDCONTROLLER_HPP_
