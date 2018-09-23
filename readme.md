@@ -7,12 +7,11 @@
 This repository contains Week 4 of ENPM808X Software Development Course. 
 
 Pair A:
-Part 1 - Driver: Rohitkrishna Nambiar
-         Navigator: Akash Guha
+Part 1 - **Driver**: Rohitkrishna Nambiar and **Navigator**: Akash Guha
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/rohit517/ENPM808X-Test-Driven-Development.git
 cd <path to repository>
 mkdir build
 cd build
@@ -39,7 +38,7 @@ In your Eclipse workspace directory (or create a new one), checkout the repo (an
 ```
 mkdir -p ~/workspace
 cd ~/workspace
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/rohit517/ENPM808X-Test-Driven-Development.git
 ```
 
 In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of cpp-boilerplate
