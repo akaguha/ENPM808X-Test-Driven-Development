@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2018 Rohitkrishna Nambiar
+ * Copyright [2018] <Rohitkrishna Nambiar>
  *
  * @file    PidControllerTest.cpp
  * @author  Rohitkrishna Nambiar (rohit517)
@@ -23,7 +23,7 @@
 TEST(PidController, computeVelocityGeneral) {
   std::shared_ptr<PidController> testPID;
   testPID = std::make_shared < PidController > (0.1, 0.01, 0.01);
-  EXPECT_EQ(testPID->computeVelocity(0.7, 0.5), 0.0402);
+  EXPECT_NEAR(testPID->computeVelocity(0.7, 0.5), 0.0402, 0.0001);
 }
 
 /**
