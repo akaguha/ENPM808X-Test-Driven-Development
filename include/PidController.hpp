@@ -1,5 +1,5 @@
 /**
- * Copyright 2018 Rohitkrishna Nambiar
+ * Copyright [2018] <Rohitkrishna Nambiar>
  *
  * @file    PidController.hpp
  * @author  Rohitkrishna Nambiar (rohit517)
@@ -30,11 +30,16 @@ class PidController {
  public:
   /**
    * @brief Constructs PidController object to default values
+   *
    */
   PidController();
 
   /**
-   * @brief Constructs PidController object with 3 user values
+   * @brief Constructs PidController object with gain values
+   *
+   * @param kP is the proportional gain double
+   * @param kI is the integral gain double
+   * @param kD is the differential gain double
    */
   PidController(double kP, double kI, double kD);
 
@@ -45,6 +50,11 @@ class PidController {
 
   /**
    * @brief Computes the new velocity given target and actual velocity
+   *
+   * @param targetSetpoint is the desired setpoint velocity double
+   * @param actualVelocity is the present velocity double
+   *
+   * @return computed velocity double
    */
   double computeVelocity(double targetSetpoint, double actualVelocity);
 };

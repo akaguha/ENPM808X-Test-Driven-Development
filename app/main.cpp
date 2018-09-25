@@ -1,8 +1,8 @@
 /**
- * Copyright (c) 2018 Rohitkrishna Nambiar
+ * Copyright [2018] <Rohitkrishna Nambiar>
  *
  * @file    main.cpp
- * @author  Rohitkrishna Nambiar (rohit517)
+ * @author  Rohitkrishna Nambiar (driver) and Akash Guha (navigator)
  * @date    9/22/2018
  * @version 1.0
  *
@@ -11,7 +11,7 @@
  * @section DESCRIPTION
  *
  * This is a program that uses the PidController library to
- * implement PID controller.
+ * implement PID controller for Acme Robotics.
  */
 
 #include <iostream>
@@ -23,5 +23,9 @@
  * @return Program execution status
  */
 int main() {
+  /*
+   * Can create an object and call the compute velocity
+   * method for a given current velocity and target setpoint.
+   */
   return 0;
 }

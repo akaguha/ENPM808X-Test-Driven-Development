@@ -17,16 +17,20 @@
 #include <memory>
 #include "PidController.hpp"
 
-std::shared_ptr<PidController> testPID;
-
-// Test compute velocity function
+/**
+ *@brief Test if the compute velocity function gives correct output.
+ */
 TEST(PidController, computeVelocityGeneral) {
-  testPID = std::make_shared < PidController > (0.7, 0.6, 0.32);
-  ASSERT_EQ(testPID->computeVelocity(0.0, 0.0), 4.0);
+  std::shared_ptr<PidController> testPID;
+  testPID = std::make_shared < PidController > (0.1, 0.01, 0.01);
+  EXPECT_EQ(testPID->computeVelocity(0.7, 0.5), 0.0402);
 }
 
-// Test for negative target value in compute velocity
+/**
+ *@brief Test if actual velocity is returned on negative target setpoint..
+ */
 TEST(PidController, computeVelocityNegativeTargetVelocity) {
-  testPID = std::make_shared < PidController > (0.7, 0.6, 0.32);
-  ASSERT_EQ(testPID->computeVelocity(-5, 3.0), 3.0);
+  std::shared_ptr<PidController> testPID;
+  testPID = std::make_shared < PidController > (0.1, 0.01, 0.01);
+  EXPECT_EQ(testPID->computeVelocity(-5, 3.0), 3.0);
 }
