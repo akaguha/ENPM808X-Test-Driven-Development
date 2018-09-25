@@ -6,8 +6,8 @@
 ## Overview
 This repository contains Week 4 of ENPM808X Software Development Course. 
 
-Pair A:
-Part 1 - **Driver**: Rohitkrishna Nambiar and **Navigator**: Akash Guha
+Pair B:
+Part 1 - **Driver**: Bharat Mathur and **Navigator**: Anirudh Topiwala
 
 ## Standard install via command-line
 ```
