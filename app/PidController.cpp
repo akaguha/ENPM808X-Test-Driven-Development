@@ -20,7 +20,8 @@
  * @brief Constructs the PidController object with default values
  */
 PidController::PidController() {
-  // Printing the default values of gains to terminal.
+  // Printing the default values of gains to terminal. Without input
+  // parameters, the controller is a Proportional only controller.sss
 }
 
 /**

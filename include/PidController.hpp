@@ -23,7 +23,7 @@
  */
 class PidController {
  private:
-  double kP = 0.0;
+  double kP = 0.1;
   double kI = 0.0;
   double kD = 0.0;
 
