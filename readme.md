@@ -3,6 +3,9 @@
 [![Coverage Status](https://coveralls.io/repos/github/rohit517/ENPM808X-Test-Driven-Development/badge.svg?branch=master)](https://coveralls.io/github/rohit517/ENPM808X-Test-Driven-Development?branch=master)
 ---
 
+## Todo
+Add looping for target value convergence. Unit test for default constructor. 
+
 ## Overview
 This repository contains Week 4 of ENPM808X Software Development Course. Implement a simple PID Controller.  
 
