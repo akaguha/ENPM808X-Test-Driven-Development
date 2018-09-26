@@ -40,19 +40,13 @@
 
 */
 
-//double  kP,kI,kD;
-
 PidController::PidController() {
 
   // Printing the default values of gains to terminal. Without input
 
   // parameters, the controller is a Proportional only controller.sss
 
-  std::cout<<"default KP:"<<kP<<"\n";
-
-  std::cout<<"default KI:"<<kI<<"\n";
-
-  std::cout<<"default KD:"<<kD<<"\n";
+  std::cout<<"default KP:"<<kP<<"default KI:"<<kI<<"default KD:"<<kD<<"\n";
 
 }
 
