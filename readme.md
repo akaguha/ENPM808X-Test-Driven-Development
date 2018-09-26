@@ -4,10 +4,11 @@
 ---
 
 ## Overview
-This repository contains Week 4 of ENPM808X Software Development Course. 
+This repository contains Week 4 of ENPM808X Software Development Course. Implement a simple PID Controller.  
 
-Pair B:
-Part 1 - **Driver**: Bharat Mathur and **Navigator**: Anirudh Topiwala
+### Pair A: <br>
+Part 1 - **Driver**: Rohitkrishna Nambiar and **Navigator**: Akash Guha <br>
+Part 2 - **Driver**: Akash Guha and **Navigator**: Rohitkrishna Nambiar
 
 ## Standard install via command-line
 ```
@@ -41,19 +42,19 @@ cd ~/workspace
 git clone --recursive https://github.com/rohit517/ENPM808X-Test-Driven-Development.git
 ```
 
-In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of cpp-boilerplate
+In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of ENPM808X-Test-Driven-Development
 
 ```
 cd ~/workspace
-mkdir -p boilerplate-eclipse
-cd boilerplate-eclipse
-cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../cpp-boilerplate/
+mkdir -p ENPM808X-Test-Driven-Development
+cd ENPM808X-Test-Driven-Development
+cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../ENPM808X-Test-Driven-Development/
 ```
 
 ## Import
 
 Open Eclipse, go to File -> Import -> General -> Existing Projects into Workspace -> 
-Select "boilerplate-eclipse" directory created previously as root directory -> Finish
+Select directory created previously as root directory -> Finish
 
 # Edit
 
@@ -62,12 +63,12 @@ Source files may be edited under the "[Source Directory]" label in the Project E
 
 ## Build
 
-To build the project, in Eclipse, unfold boilerplate-eclipse project in Project Explorer,
+To build the project, in Eclipse, unfold ENPM808X-Test-Driven-Development project in Project Explorer,
 unfold Build Targets, double click on "all" to build all projects.
 
 ## Run
 
-1. In Eclipse, right click on the boilerplate-eclipse in Project Explorer,
+1. In Eclipse, right click on the ENPM808X-Test-Driven-Development in Project Explorer,
 select Run As -> Local C/C++ Application
 
 2. Choose the binaries to run (e.g. shell-app, cpp-test for unit testing)
@@ -79,7 +80,7 @@ select Run As -> Local C/C++ Application
 1. Set breakpoint in source file (i.e. double click in the left margin on the line you want 
 the program to break).
 
-2. In Eclipse, right click on the boilerplate-eclipse in Project Explorer, select Debug As -> 
+2. In Eclipse, right click on the ENPM808X-Test-Driven-Development in Project Explorer, select Debug As -> 
 Local C/C++ Application, choose the binaries to run (e.g. shell-app).
 
 3. If prompt to "Confirm Perspective Switch", select yes.
