@@ -15,6 +15,7 @@
 */
 
 #include <iostream>
+#include<stdio.h>
 #include "PidController.hpp"
 
 /**
@@ -28,7 +29,7 @@ int main() {
   * method for a given current velocity and target setpoint.
   */
 
-  PidController class_obj;
-  class_obj.computeVelocity(3.0,5.0);
+  PidController class_obj(0.1, 0.01, 0.01);
+  std::cout<<class_obj.computeVelocity(3.0,5.0);
   return 0;
 }
