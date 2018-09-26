@@ -15,7 +15,6 @@
 */
 
 #include <iostream>
-#include<stdio.h>
 #include "PidController.hpp"
 
 /**
@@ -30,6 +29,7 @@ int main() {
   */
 
   PidController class_obj(0.1, 0.01, 0.01);
-  std::cout<<class_obj.computeVelocity(3.0,5.0);
+  std::cout << "Output Velocity: " << class_obj.computeVelocity(3.0, 5.0)
+            << std::endl;
   return 0;
 }
