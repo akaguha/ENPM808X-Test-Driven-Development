@@ -1,35 +1,35 @@
 /**
-* Copyright [2018] <Rohitkrishna Nambiar>
+* Copyright [2018] Akash Guha
 *
 * @file    main.cpp
-* @author  Rohitkrishna Nambiar (driver) and Akash Guha (navigator)
-* @date    9/22/2018
-* @version 1.0
+* @author  Akash Guha
+* @date    11/30/2018
+* @version 2.0
 *
-* @brief   Program to run PidController class.
+* @brief   Program to run the Robot class.
 *
 * @section DESCRIPTION
 *
-* This is a program that uses the PidController library to
-* implement PID controller for Acme Robotics.
+* This is a program that creates a Robot class which uses the
+* control inputs obtained from the PID controller class to drive around.
 */
 
 #include <iostream>
-#include "PidController.hpp"
+#include "Robot.hpp"
 
 /**
 * @brief Main function
 *
-* @return Program execution status
+* @return Program execution status as int
 */
 int main() {
   /*
-  * Can create an object and call the compute velocity
-  * method for a given current velocity and target setpoint.
+  * Creates a Robot class object and calls its drive method
+  * which uses input from the PID controller class
   */
-
-  PidController class_obj(0.1, 0.01, 0.01);
-  std::cout << "Output Velocity: " << class_obj.computeVelocity(3.0, 5.0)
-            << std::endl;
+  Robot class_obj;
+  PidController PID;
+  double vel = class_obj.drive(PID);
+  std::cout << "Output Velocity: " << vel << std::endl;
   return 0;
 }

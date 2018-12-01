@@ -1,49 +1,35 @@
 /**
-
-* Copyright [2018] <Rohitkrishna Nambiar>
-
+* Copyright [2018] Akash Guha
 *
-
 * @file    PidController.hpp
-
-* @author  Rohitkrishna Nambiar (rohit517)
-
-* @date    9/22/2018
-
-* @version 1.0
-
+* @author  Akash Guha(akaguha@terpmail.umd.edu)
+* @date    11/30/2018
+* @version 2.0
 *
-
 * @brief   PidController class.
-
 *
-
 * @section DESCRIPTION
-
 *
-
-* This class cpp file implements the methods for PID Controller.
-
+* This cpp file implements the methods for PID Controller.
 */
-
-
 
 #include <iostream>
-
 #include "PidController.hpp"
 
-
-
 /**
-* @brief Constructs the PidController object with default values
+* @brief Constructs the PidController object with error value as zero
 */
 PidController::PidController() {
-  // Printing the default values of gains to terminal. Without input
+  error = 0.0;
+  kP = 0.0;
+  kI = 0.0;
+  kD = 0.0;
+}
 
-  // parameters, the controller is a Proportional only controller.sss
-
-  std::cout << "default KP:" << kP << "default KI:" << kI << "default KD:" << kD
-            << "\n";
+/**
+* @brief Destroys the PidController object
+*/
+PidController::~PidController() {
 }
 
 /**
@@ -52,16 +38,19 @@ PidController::PidController() {
 * @param kP is the proportional gain double
 * @param kI is the integral gain double
 * @param kD is the differential gain double
+*
+* @return true or false based on specific values of kP, kI and kD
 */
-PidController::PidController(double userKp, double userKi, double userKd) {
+void PidController::pidControllerInit(double userKp,
+double userKi, double userKd) {
   // Printing the user defined value of gains to terminal.
   kP = userKp;
   kI = userKi;
   kD = userKd;
 
-  std::cout << "User KP:" << kP << "\n";
-  std::cout << "User KI:" << kI << "\n";
-  std::cout << "User KD:" << kD << "\n";
+//  std::cout << "User KP:" << kP << "\n";
+//  std::cout << "User KI:" << kI << "\n";
+//  std::cout << "User KD:" << kD << "\n";
 }
 
 /**
@@ -87,7 +76,7 @@ double PidController::computeVelocity(double targetSetpoint,
 
   double error = targetSetpoint - actualVelocity;
   double dt = 0.1;
-  double velocity = 0.0;
+  double velocity;
 
   velocity = kP * error + kI * error * dt + kD * error / dt;
   if (targetSetpoint < 0.0) {
@@ -96,8 +85,4 @@ double PidController::computeVelocity(double targetSetpoint,
     return velocity;
   }
 
-  /**
-  * @brief Destroys the PidController object
-  */
-  PidController::~PidController() {
-  }
+
