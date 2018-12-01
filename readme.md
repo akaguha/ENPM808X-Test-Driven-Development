@@ -1,28 +1,31 @@
-# ENPM808X-Test Driven Development
+# Test Driven Development - GMock Testing
 [![Build Status](https://travis-ci.org/rohit517/ENPM808X-Test-Driven-Development.svg?branch=master)](https://travis-ci.org/rohit517/ENPM808X-Test-Driven-Development)
 [![Coverage Status](https://coveralls.io/repos/github/rohit517/ENPM808X-Test-Driven-Development/badge.svg?branch=master)](https://coveralls.io/github/rohit517/ENPM808X-Test-Driven-Development?branch=master)
 ---
 
-## Todo
-Add looping for target value convergence. Unit test for default constructor. 
-
 ## Overview
-This repository contains Week 4 of ENPM808X Software Development Course. Implement a simple PID Controller.  
-
-### Pair A: <br>
-Part 1 - **Driver**: Rohitkrishna Nambiar and **Navigator**: Akash Guha <br>
-Part 2 - **Driver**: Akash Guha and **Navigator**: Rohitkrishna Nambiar
+This repository demonstrates the mock concept in unit testing, using the Google Test and Google Mock frameworks.  
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/rohit517/ENPM808X-Test-Driven-Development.git
+git clone -b GMock_Extra_Credit --single-branch https://github.com/akaguha/ENPM808X-Test-Driven-Development.git
 cd <path to repository>
 mkdir build
 cd build
 cmake ..
 make
-Run tests: ./test/cpp-test
 Run program: ./app/shell-app
+```
+
+## Testing
+In this project, there are two classes Robot and PidController. The Robot class is dependent on the PidController class. Therefore to test the methods of the class Robot independently a mock class is implemented which is inherited from the dependent  class PidController. All the methods in the PidController class is converted into virtual methods.
+
+The implementation is shown in the RobotTest file included in the tests folder. Filepath for gmock is added to the CMakelist.
+
+The tests can be run using the following command.
+```
+cd <path to build folder>
+./test/cpp-test
 ```
 
 ## Building for code coverage (for assignments beginning in Week 4)
@@ -42,7 +45,7 @@ In your Eclipse workspace directory (or create a new one), checkout the repo (an
 ```
 mkdir -p ~/workspace
 cd ~/workspace
-git clone --recursive https://github.com/rohit517/ENPM808X-Test-Driven-Development.git
+git clone -b GMock_Extra_Credit --single-branch https://github.com/akaguha/ENPM808X-Test-Driven-Development.git
 ```
 
 In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of ENPM808X-Test-Driven-Development
