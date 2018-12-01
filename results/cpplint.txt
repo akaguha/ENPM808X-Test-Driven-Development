@@ -1,0 +1,12 @@
+akash@akash-Inspiron-7577:~/ExtraCredit_GoogleMock/ENPM808X-Test-Driven-Development$ cpplint $( find . -name \*.hpp -or -name \*.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./docs/" -e "^./results" )
+Done processing ./app/Robot.cpp
+Done processing ./app/PidController.cpp
+Done processing ./app/main.cpp
+Done processing ./test/PidControllerTest.cpp
+Done processing ./test/RobotTest.cpp
+Done processing ./test/main.cpp
+./include/Robot.hpp:41:  Is this a non-const reference? If so, make const or use a pointer: PidController &PID_  [runtime/references] [2]
+Done processing ./include/Robot.hpp
+Done processing ./include/PidController.hpp
+Total errors found: 1
+
